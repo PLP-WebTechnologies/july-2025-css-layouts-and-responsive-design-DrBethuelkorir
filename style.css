@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: aqua;
+}
+.wrapper{
+   display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   background-color: rgb(16, 30, 30);
+   color: white;
+}
+.images{
+    display: inline-flex;
+}
+.images img{
+    height: 250px;
+    width: 350px;
+}
+.cont{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: aqua;
+    width: 80%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav a:hover{
+    color: rgb(96, 96, 207);
+    text-decoration: underline;
+}
+.images img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.images img :hover{
+ width: 400px;
+ height: 300px;
+}
+.images{
+    display: flex;
+    gap: 30px;
+}
+.Some{
+    color: rgb(41, 40, 40);
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.foooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}   
+.foooter p{
+    font-size: 15px;
+    color: rgb(41, 40, 40);
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 900px) {
+    .cont, .nav {
+        width: 95%;
+    }
+    .images img {
+        width: 250px;
+        height: 180px;
+    }
+    .wrapper {
+        padding: 10px;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    .wrapper {
+        height: auto;
+        padding: 10px 0;
+    }
+    .cont, .nav {
+        width: 100%;
+        padding: 10px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .images {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .images img {
+        width: 90vw;
+        max-width: 100%;
+        height: auto;
+    }
+    .foooter {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
